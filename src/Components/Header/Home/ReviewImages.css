@@ -1,0 +1,14 @@
+.running-images {
+    display: flex;
+    overflow: hidden;
+    gap: 5rem;
+    width: 100%;
+  }
+  
+  .running-images img {
+    /* flex-shrink: 0; */
+    width: 100px; /* Adjust based on your preference */
+    height: 100px; /* Adjust based on your preference */
+    margin-right: 10px; /* Adjust based on your preference */
+  }
+  

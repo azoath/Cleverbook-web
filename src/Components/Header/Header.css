@@ -1,0 +1,137 @@
+/* General Styles */
+.h-wrapper {
+  background-color: #151218;
+  color: white;
+  padding: 10px 0;
+}
+
+.h-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo img {
+  width: 150px;
+  height: 40px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #ff6f61;
+}
+
+.side-bar {
+  display: flex;
+  align-items: center;
+}
+
+.side-bar a {
+  color: #be6caf;
+  text-decoration: none;
+  margin-right: 35px;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.side-bar a:hover {
+  color: white;
+}
+
+.side-bar button {
+  background-color: transparent;
+  background-image: linear-gradient(157deg, #fc907e, #9f6eed);
+  color: var(--white);
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-decoration: none;
+  transition: all 0.35s;
+  display: flex;
+  cursor: pointer;
+}
+
+.side-bar button:hover {
+  background-color: #ff4c39;
+}
+
+.menu-button {
+  display: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #151218;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 10px 0;
+  }
+
+  .navbar.open {
+    display: flex;
+  }
+
+  .navbar a {
+    margin: 10px 0;
+  }
+
+  .side-bar {
+    display: none;
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  .h-container {
+    position: relative;
+  }
+}
+
+@media (max-width: 576px) {
+  .h-container {
+    padding: 0 10px;
+  }
+
+  .navbar a {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+
+  .side-bar a {
+    font-size: 14px;
+  }
+
+  .logo img {
+    width: 120px;
+    height: 30px;
+  }
+}

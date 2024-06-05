@@ -1,0 +1,155 @@
+/* Base styles */
+.c-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white-smoke);
+  padding: 40px 0;
+  background-image: url(../../../assets/gradient-caraousel.svg);
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+.c-container {
+  width: 80%;
+  max-width: 1200px;
+  padding: 20px;
+  text-align: center;
+}
+
+.c-title h1 {
+  font-size: 37.7143px;
+  line-height: 48px;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 40px;
+}
+
+.caraousol-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.arrowleft {
+  transform: rotate(180deg);
+}
+
+.arrowleft, .arrowright {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrowleft img, .arrowright img {
+  width: 100%;
+  height: auto;
+}
+
+.caraousol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.caraousol-container {
+  background-color: var(--white);
+  border-radius: 25px;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  height: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 70px 40px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.5s ease-in-out;
+}
+
+.caraousol-container img {
+  object-fit: fill;
+  width: 500px;
+  height: 382px;
+  margin-right: 20px;
+}
+
+.c-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.c-content .h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 27.8571px;
+  font-weight: 600;
+  line-height: 38px;
+}
+
+.c-content .text-medium {
+  direction: ltr;
+  text-align: left;
+  object-fit: fill;
+  flex: 0 auto;
+  align-self: center;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 1024px) {
+  .c-container {
+    width: 90%;
+  }
+  
+  .c-title h1 {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 30px;
+  }
+  
+  .caraousol-container {
+    padding: 50px 30px;
+  }
+  
+  .caraousol-container img {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .c-container {
+    width: 95%;
+  }
+  
+  .c-title h1 {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .caraousol-container {
+    padding: 40px 20px;
+    flex-direction: column;
+  }
+  
+  .c-content .h2 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  
+  .c-content .text-medium {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}

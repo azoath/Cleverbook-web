@@ -1,0 +1,142 @@
+.footer-wrapper {
+    display: grid;
+    grid-column-gap: 40px;
+    grid-row-gap: 16px;
+    grid-template-rows: auto auto;
+    grid-template-columns: 3fr 1fr 1fr 1.5fr;
+    padding-top: 200px;
+    padding-bottom: 100px;
+    padding-left: 120px;
+    padding-right: 120px;
+    background-color: #151218;
+    color: #C5C5C5; /* Adjust background color as needed */
+    position: relative; /* Added for positioning the scroll-to-top icon */
+}
+
+.footer-company {
+    /* grid-column: span 4; */
+    margin-bottom: 20px;
+    width: 70%;
+}
+
+.footer-company .logo {
+    margin-bottom: 20px;
+}
+
+.footer-explore,
+.footer-learn,
+.footer-address {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-explore h3,
+.footer-learn h3,
+.footer-address h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+
+.footer-explore ul,
+.footer-learn ul {
+    list-style: none;
+    line-height: 35px;
+    padding: 0;
+}
+
+.footer-explore li,
+.footer-learn li {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.footer-address p {
+    margin: 5px 0;
+    margin-bottom: 10px;
+    font-size: 16px;
+    width: 85%;
+}
+
+.footer-social {
+    display: flex;
+    gap: 25px;
+    margin-top: 10px;
+}
+
+.social-icon {
+    font-size: 24px;
+    color: #C5C5C5;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #ffffff;
+}
+
+.footer-copyright {
+    grid-column: span 4;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 10px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.footer-copyright-top {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-bottom: 10px;
+}
+
+.footer-copyright p {
+    margin: 5px 0;
+    line-height: 10px;
+}
+
+.scroll-to-top {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    font-size: 24px;
+    color: #C5C5C5;
+    cursor: pointer;
+    transition: color 0.3s;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.scroll-to-top:hover {
+    color: #ffffff;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+    .footer-company p{
+        display: none;
+    }
+    .footer-company .logo{
+        display: none;
+    }
+    .footer-wrapper{
+        grid-template-columns: 1fr 1fr 1.5fr;
+    }
+   
+}
+
+@media screen and (max-width: 768px) {
+    .footer-wrapper {
+        padding: 100px 60px; /* Adjust padding for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer-wrapper {
+        padding: 60px 30px; /* Adjust padding for even smaller screens */
+    }
+}

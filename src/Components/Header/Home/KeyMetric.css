@@ -1,0 +1,66 @@
+
+.km-wrapper {
+    width: 100%;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+  }
+  
+  .km-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .timeline {
+    position: relative;
+    height: 100%; /* Adjust as per your design */
+  }
+  
+  .timeline-left {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: #ccc; /* Timeline bar color */
+  }
+  
+  .timeline-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px; /* Adjust as per your design */
+  }
+  
+  .timeline-right a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 0;
+    transition: color 0.3s ease;
+  }
+  
+  .timeline-right a:hover {
+    color: #007bff;
+  }
+  
+  .content {
+    flex: 1;
+    margin-left: 20px; /* Adjust as per your design */
+    padding: 20px;
+    background-color: #f9f9f9; /* Content box background color */
+    border: 1px solid #ccc; /* Content box border */
+    border-radius: 8px; /* Content box border radius */
+  }
+  
+  .content h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .content p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  

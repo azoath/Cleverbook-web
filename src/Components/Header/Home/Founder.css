@@ -1,0 +1,118 @@
+/* Founder.css */
+.founder-wrapper {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.founder-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1200px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.f-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 1rem;
+  position: relative;
+  opacity: 0; /* Initially hidden */
+  transform: translateX(-100%); /* Initially positioned out of view */
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Smooth transition */
+}
+
+.f-left.visible {
+  opacity: 1; /* Fully visible */
+  transform: translateX(0); /* Positioned in view */
+}
+
+.f-left img {
+  width: 30rem;
+  height: 40rem;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.f-content {
+  width: 60%;
+  position: absolute;
+  bottom: 0;
+  right: -20%;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: var(--lavender);
+}
+
+.f-content p {
+  font-size: 1rem;
+  color: black;
+  font-weight: 600;
+}
+
+.f-content p span {
+  font-weight: normal;
+}
+
+.f-right {
+  flex: 2;
+  padding: 2rem;
+}
+
+.f-right h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  color: black;
+  margin-bottom: 1rem;
+}
+
+.f-right p {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.f-right button {
+  display: inline-block;
+  position: relative;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s;
+  padding: 12px 23px;
+  font-size: 16px;
+  font-weight: 600;
+  background: linear-gradient(145deg, rgba(252, 144, 126, 1) 0%, rgba(159, 110, 237, 1) 100%);
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .founder-container {
+      flex-direction: column;
+  }
+
+  .f-right {
+      padding: 1rem;
+  }
+
+  .f-left {
+      padding: 1rem;
+      align-items: center;
+  }
+
+  .f-content {
+      width: 100%;
+      position: static;
+      margin-top: 1rem;
+  }
+}
